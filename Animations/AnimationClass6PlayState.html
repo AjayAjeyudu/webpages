@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>            </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="">
+<style>
+    body{
+        background-color: yellow;
+    }
+    .box{
+        width:100px;
+        height: 100px;
+        background-color: aquamarine;
+        animation-name:test;
+        animation-duration: 2s;
+        animation-iteration-count: 2;
+        /*ANIMATION playstate PROPERTY HERE BELOW*/
+        animation-play-state: paused;   
+        /*IGNORE COMMENTS*/
+
+    }
+    
+    .box:hover
+    {
+        animation-play-state: running;
+    }
+    
+     @keyframes test 
+     {
+        0%{
+                background-color: red;
+          }
+
+        100%{
+            transform: translatex(500px);
+            background-color: blue;                
+           }
+        
+     }
+    
+    
+</style>
+
+    </head>
+    <body>
+
+        
+<div class="box"> </div>
+
+
+
+
+
+
+
+
+    </body>
+</html>

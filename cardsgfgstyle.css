@@ -1,0 +1,86 @@
+body {
+    text-align:center;/*    internal alignment of text */
+    background-color:  #222020;
+}
+
+.grid-container {
+    display:grid;
+    grid-template-columns:
+     repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 50px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    padding: 70px;
+    border-radius: 10px;/* external radius*/
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+
+
+.card:nth-child(1) {
+    background-color: rgb(77,77,255);
+}
+
+.card:nth-child(2) {
+    background-color: #3498DB;
+}
+
+.card:nth-child(3) {
+    background-color: #27AE60;
+}
+
+.card:nth-child(4) {
+    background-color: rgb(176,38,255);
+}
+
+.card:nth-child(5) {
+    background-color: rgb(138, 255, 255);
+}
+
+.card:nth-child(6) {
+    background-color: rgb(18,19,19);
+    color:aliceblue;
+}
+
+.card:nth-child(7) {
+    background: linear-gradient(-45deg, #64b5f6,rgb(168, 254, 168));
+    color:aliceblue;
+}
+
+.card:nth-child(8) {
+    background: linear-gradient(-45deg, dodgerblue,rgb(234, 255, 118));
+    color:aliceblue;
+}
+
+.card:nth-child(9) {
+    background: linear-gradient(-45deg, green,rgb(234, 255, 118));
+    color:aliceblue;
+}
+
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .card {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 576px) 
+{
+    .grid-container {
+        grid-template-columns: 
+        repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .card {
+        padding: 20px;
+    }
+}

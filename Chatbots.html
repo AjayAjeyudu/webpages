@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CHATBOTS PAGE </title>
+<style>
+    body {
+    /*    background: linear-gradient(to bottom right, purple,rgb(205, 93, 205),lightgrey,black);       */
+        background: linear-gradient(to bottom right,crimson,blue);
+        font-family: Arial, sans-serif;
+        color:aliceblue;
+        margin: 0;/* Remove default margin */
+        padding: 0;/* Remove default padding */
+    }
+
+    .container-fluid{
+        display:grid;
+        justify-content: center;
+        background-color: inherit;
+        border:1px solid rgb(255, 84, 255);
+
+    }
+
+    .container {
+        border:none;
+        border-radius: 10px;
+        background-color: lightgrey ;
+        width: 70%;
+        height:70%;
+        /*************/
+        /*backdrop-filter: blur(20px);
+        border-top:1px solid rgba(255,255,255,0.4);
+        border-left:1px solid rgba(255,255,255,0.3);
+        box-shadow: 3px,3px,3px rgba(0,0,0,0.089);*/
+
+        
+        margin: 20px auto;/* Center the container horizontally */
+        overflow: hidden;/* Hide overflow content */
+    }
+    
+
+    .row {
+        display: flex;
+        margin-bottom: 20px;/* Add bottom margin to separate rows */
+    }
+
+    .column {
+        flex: 1;/* Allow columns to share available space equally */
+        padding: 15px;/* Add padding to columns */
+        box-sizing: border-box;/* Include padding and border in the element's total width and height */
+    }
+
+    .image {
+        border-radius: 40px;
+        width: 100%; /* Make images fill their parent container */
+        height: auto;/* Maintain aspect ratio */
+        display: block; /* Make images block-level elements */
+        cursor:pointer; /* Change cursor to pointer on hover */
+    }
+
+    .image:hover {
+  transform: scale(1.04); /* Increase size on hover */
+        
+}
+
+    .text {
+        margin-top: 10px;/* Add top margin to separate text from images */
+        text-align: center;
+        color:#3F51B5
+    }
+</style>
+</head>
+<body>
+    <div class="container-fluid">
+<h3> CLICK ON THESE ICONS </h3>
+    </div>
+
+<div class="container" id="cont1">
+    <!---ROW-1 START-->
+    <div class="row">
+        <div class="column">
+            <a href="https://c.ai/">
+                <img src="CHATchatc.aiAI.png" alt="Image 1" class="image">
+            </a>
+            <p class="text">Chatc.AI</p>
+        </div>
+        <div class="column">
+            <a href="https://claude.ai">
+                <img src="CHATchatimageclaudeailogo.png" alt="Image 2" class="image">
+            </a>
+            <p class="text">Claude</p>
+        </div>
+        <div class="column">
+            <a href="https://rationale.jina.ai/">
+                <img src="CHATImageRationalelightAI.svg" alt="Image 3" class="image">
+            </a>
+            <p class="text">Rationale</p>
+        </div>
+    </div>
+
+    <!---ROW-2 START-->
+    <div class="row">
+        <div class="column">
+            <a href="https://chatsonic.pro/">
+                <img src="CHATimageChatSonicAi.png" alt="Image 4" class="image">
+            </a>
+            <p class="text">ChatSonic</p>
+        </div>
+        <div class="column">
+            <a href="https://chatspot.ai/">
+                <img src="CHATimageChatspotAi.png" alt="Image 5" class="image">
+            </a>
+            <p class="text">Chatspot</p>
+        </div>
+        <div class="column">
+            <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwj5xJL-9ZGGAxVfH4MDHayLAZQYABAAGgJzZg&ase=2&gclid=EAIaIQobChMI-cSS_vWRhgMVXx-DAx2siwGUEAAYASAAEgIUvPD_BwE&ohost=www.google.com&cid=CAASJeRo0zE38gN5K0hWMgfjtG5ulcC1Lngy8UiNDQAzWyUTGmwpNZo&sig=AOD64_1to7w0-J_YU7TDNEcTlznPAHwlYQ&q&nis=4&adurl&ved=2ahUKEwjv6I3-9ZGGAxXuRmwGHa9yAuQQ0Qx6BAgGEAE">
+                <img src="CHATimageGEminiAI.png" alt="Image 6" class="image">
+            </a>
+            <p class="text">Gemini</p>
+        </div>
+    </div>
+
+    <!---ROW-3 START-->
+
+
+    <div class="row">
+        <div class="column">
+            <a href="https://www.jasper.ai/">
+                <img src="CHATimageJasperAI.png" alt="Image 4" class="image">
+            </a>
+            <p class="text">Jasper</p>
+        </div>
+        <div class="column">
+            <a href="https://poe.com/">
+                <img src="CHATimagepoeAi.ico" alt="Image 5" class="image">
+            </a>
+            <p class="text">Poe AI</p>
+        </div>
+        <div class="column">
+            <a href="https://www.kommunicate.io/">
+                <img src="CHATimageKommunicateAI.png" alt="Image 6" class="image">
+            </a>
+            <p class="text">Kommunicate</p>
+        </div>
+    </div>
+
+</div><!--MAIN CONTANIER ENDING-->
+
+</body>
+</html>
+<!--
+
+othe way to display the grid as on 7 sep 2024
+
+.row {
+        display: grid;
+        grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+        margin-bottom: 20px;/* Add bottom margin to separate rows */
+    }
+
+    .column {
+        display:grid;
+        grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+        box-sizing: border-box;/* Include padding and border in the element's total width and height */
+    }
+
+
+
+
+
+
+
+
+
+-->

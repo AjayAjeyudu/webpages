@@ -1,0 +1,114 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box
+}
+
+body
+{
+    height:100vh;
+    font-family:Arial;
+}
+
+nav
+{
+    height:60px;
+    display:flex;
+    align-items: center;
+    background-color: black;
+    color:white;
+}
+
+.nav-logo-location
+{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:0.5rem;/**********************/
+}
+
+.logo img
+{
+    width:100px;
+    height:30px;/*CHANGE THIS IMAGE*****/
+    padding:0.5rem;/**************************/
+}
+
+/*****ON HOVER EFFECT******/
+.logo:hover
+{
+    outline:1px solid white;
+}
+
+.location
+{
+    height:100%;
+    font-size:0.7rem;/******************/
+    padding:.5rem 1 rem;/**************************/
+}
+.location:hover
+{
+    outline:1px solid white;
+}
+
+.location-icon
+{
+    display:flex;
+    align-items: center;
+}
+
+/********************************************************************/
+/********************************************************************/
+
+
+.search-box-part
+{
+    height:40px;
+    display:flex;
+    flex-grow: 1;     /*flex-grow :1??????*/
+    border-radius: 5px;
+    margin-left: 1rem;
+}
+
+
+.search-box-part:hover
+{
+outline: 2px solid orange;
+}
+
+.search-dropdown
+{
+    width:5 rem;
+    font-size:1rem;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius:5px 0 0 5px;
+    outline: none;
+}
+
+.search-dropdown:focus
+{
+outline:none;
+}
+
+.search-box
+{
+    font-size: 1rem;
+    flex-grow:1;
+    padding:0.5rem;
+}
+
+.search-box
+{
+    outline:none;
+}
+
+.search-icon i
+{
+    height:100%;
+    background-color: orange;
+    border-radius: 0 5px 5px 0;
+    padding: 0.7rem 0.5rem;
+    outline:none;
+}

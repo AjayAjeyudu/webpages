@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PHOTO EDITORS PAGE </title>
+<style>
+    body {
+        background: linear-gradient(to bottom right, rgb(205, 93, 205), dodgerblue);
+        font-family: Arial, sans-serif;
+        color:aliceblue;
+        margin: 0;/* Remove default margin */
+        padding: 0;/* Remove default padding */
+    }
+
+    .container-fluid{
+        display:grid;
+        justify-content: center;
+        background-color: inherit;
+        border:1px solid rgb(255, 84, 255);
+
+    }
+
+    .container {
+        border:none;
+        border-radius: 10px;
+        background-color: lightgrey ;
+        width: 70%;
+        height:70%;
+        margin: 20px auto;/* Center the container horizontally */
+        overflow: hidden;/* Hide overflow content */
+    }
+    
+
+    .row {
+        display: flex;
+        margin-bottom: 20px;/* Add bottom margin to separate rows */
+    }
+
+    .column {
+        flex: 1;/* Allow columns to share available space equally */
+        padding: 15px;/* Add padding to columns */
+        box-sizing: border-box;/* Include padding and border in the element's total width and height */
+    }
+
+    .image {
+        border-radius: 40px;
+        width: 100%; /* Make images fill their parent container */
+        height: auto;/* Maintain aspect ratio */
+        display: block; /* Make images block-level elements */
+        cursor:pointer; /* Change cursor to pointer on hover */
+    }
+
+    .image:hover {
+  transform: scale(1.04); /* Increase size on hover */
+        
+}
+
+    .text {
+        margin-top: 10px;/* Add top margin to separate text from images */
+        text-align: center;
+        color:#3F51B5
+    }
+</style>
+</head>
+<body>
+    <div class="container-fluid">
+<h3> CLICK ON THESE ICONS </h3>
+    </div>
+
+<div class="container" id="cont1">
+    <div class="row">
+        <div class="column">
+            <a href="file:///D:/java%20prog/webpage/webpage%20tutorials/ImagesGrid.html">
+                <img src="imagescheckSamples.gif" alt="Image 1" class="image">
+            </a>
+            <p class="text">Check Samples</p>
+        </div>
+        <div class="column">
+            <a href="https://clipdrop.co">
+                <img src="imageclipdropAI.png" alt="Image 2" class="image">
+            </a>
+            <p class="text">Clipdrop</p>
+        </div>
+        <div class="column">
+            <a href="https://leonardo.ai">
+                <img src="imageLeonardoAI blackbg.jpg" alt="Image 3" class="image">
+            </a>
+            <p class="text">Leonardo AI</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <a href="https://skylum.com/luminar-ai">
+                <img src="imageLuminarNeoPng.webp" alt="Image 4" class="image">
+            </a>
+            <p class="text">LuminarNeo</p>
+        </div>
+        <div class="column">
+            <a href="https://www.midjourney.com/">
+                <img src="imageMidjourneylogo_Emblem.png" alt="Image 5" class="image">
+            </a>
+            <p class="text">Midjourney</p>
+        </div>
+        <div class="column">
+            <a href="https://pixlr.com/">
+                <img src="imagepixlrAIlogo.png" alt="Image 6" class="image">
+            </a>
+            <p class="text">Pixlr</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

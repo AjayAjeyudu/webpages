@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  /* BODY COLOR*/
+    body{
+        background-color: lightcyan;
+    }
+    
+div {
+  border:    none;/*3px solid #4CAF50;*/  
+    padding: 5px;
+}
+
+.rolls {
+  float: right;
+}
+
+.img2 {
+  float: left;
+  border-radius: 10px;
+}
+.img3{
+    float:right;
+    
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+h2{
+  background-color:blueviolet;
+}
+</style>
+</head>
+<!--BODY BODY BODDY BODY BODY BODY BODY BODY BODY BODY-->
+<body>
+
+<h2>Without Clearfix</h2>
+
+<p>This image is floated to the right. It is also taller than the element containing it, so it overflows outside of its container:</p>
+
+<div>
+  <img class="rolls" src="RollsRoyce White - Copy.jpg" alt="Pineapple" width="300" height="300">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+</div>
+<br>
+<br>
+<h2 style="clear:right">With New Modern Clearfix</h2>
+<p>Add the clearfix hack to the containing element, to fix this problem:</p>
+
+<div class="clearfix">
+  <img class="img2" src="RollsRoyce White - Copy.jpg" alt="Pineapple" width="300" height="300" >
+  
+  
+</div>
+
+<div>
+    <img class="img3" src="RollsRoyce White - Copy.jpg"  width="300" height="300" >
+
+</div>
+
+</body>
+</html>
+
+

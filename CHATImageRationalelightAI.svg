@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300px" height="300px" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Rationale - Light</title>
+    <g id="Rationale---Light" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组" transform="translate(62.000000, 30.000000)">
+            <path d="M0,177.777778 L0,0 L88.5,0 C137.3772,0 177,39.7969111 177,88.8888889 C177,137.980867 137.3772,177.777778 88.5,177.777778 L88.5,177.777778 L0,177.777778 Z" id="形状结合" fill="#FFD60A" opacity="0.6"></path>
+            <rect id="矩形备份-49" fill="#EF7D69" x="0" y="0" width="82.6" height="240"></rect>
+            <polygon id="矩形备份-50" fill="#009191" opacity="0.8" points="177 240 1.03167475e-12 240 0 153.646902 0 62.2222222"></polygon>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>            </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="">
+<style>
+    .box{
+        width:100px;
+        height: 100px;
+        background-color: aquamarine;
+    }
+/******
+    .box:active{ /*Ctive means mouse-click 
+        animation-name:test;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-delay: 1s;
+        /*CLICK ADN HOLD THIS IN  BROWSER FOR ANIMATION  
+    }
+*******/
+
+    .box:hover{ /*Ctive means mouse-click*/ 
+        animation-name:test;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        /*HOVER THIS IN  BROWSER FOR ANIMATION*/
+    }
+
+     @keyframes test 
+     {
+        0%{
+                width:200px;
+                height:200px;
+                background-color: red;
+          }
+
+        50%{
+
+            border-radius:50%;
+        }
+        100%{
+                background-color: blue;
+                transform: translate(400px);
+                border-radius:50%;
+           }
+        
+     }
+    
+    
+</style>
+
+    </head>
+    <body>
+
+        
+<div class="box"> </div>
+
+
+
+
+
+
+
+
+    </body>
+</html>

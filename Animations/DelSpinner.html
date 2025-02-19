@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animated Conical Gradient</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+  }
+
+  .conical-gradient {
+    width: 200px;
+    height: 200px;
+    border-radius: 0%;
+   /* background: conic-gradient(from -90deg, #ff7e5f, #feb47b, #ffdb8e, #ffed9e, #ffefb1, #ffe8c5, #ffdcd9, #ffbfe5, #ff9ee5, #ff7ce1, #ff5ac9, #ff3da2, #ff2675, #ff1050, #ff0532, #ff0521, #ff101b, #ff1f1c, #ff3722, #ff522e, #ff703e, #ff8f52, #ffaf6a, #ffd18a, #ffecb4, #fffedc, #e9fffb, #c3f6ff, #9ceaff, #79dbff, #59caff, #3cb5ff, #239dff, #1182ff, #0862ff, #0641ff, #0a22ff, #1608ff, #2c00ff, #4902ff, #6a09ff, #8d16ff, #b121ff, #d42bff, #f249ff, #ff6eff, #ff93ff, #ffa6ff, #ffa6ff);
+   */
+   background: conic-gradient(from -90deg,blue,red);
+
+
+   animation: spin 2s linear infinite;
+  }
+
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="conical-gradient"></div>
+</body>
+</html>
+
+
+<!------
+
+Explanation:
+
+HTML Structure: We have a simple HTML structure with a div element with the class conical-gradient. This div will represent our spinning conical gradient.
+
+CSS Styling:
+
+body: It's styled to center the conical gradient in the middle of the page.
+.conical-gradient: This class styles the spinning conical gradient.
+width and height set the dimensions of the gradient.
+border-radius is set to 50% to make it a perfect circle.
+background property uses the conic-gradient function to create the conical gradient. The gradient is defined with multiple color stops, and it rotates from -90deg (top) to 270deg (full circle). You can adjust the colors and stops as per your preference.
+animation property applies the spin animation to the conical gradient. It lasts for 5 seconds, has a linear timing function, and repeats infinitely.
+CSS Animation:
+
+@keyframes spin: This defines the animation named spin.
+100%: At 100% of the animation duration, the element will have rotated 360 degrees using the transform property.
+When you run this code, you'll see a spinning conical gradient in the middle of the page. Adjust the dimensions, colors, and animation duration as needed.
+
+
+
+-->

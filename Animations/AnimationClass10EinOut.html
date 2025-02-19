@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>            </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="">
+<style>
+    body{
+        background-color: yellow;
+    }
+    .box{
+        width:100px;
+        height: 100px;
+        background-color: aquamarine;
+        animation-name:test;
+        animation-duration: 2s;
+        animation-iteration-count: 2;
+        animation-timing-function: linear; 
+    }
+
+    .box2
+    {
+    margin-top: 100px;/*gap betweeen boxes*/
+    animation-timing-function: ease-in-out; 
+    /*HERE because of ease out second box moves slowly but reach end at same time   */
+       
+
+    }
+    
+    .box:hover
+    {
+        animation-play-state: running;
+    }
+    
+     @keyframes test 
+     {
+        0%{
+                background-color: red;
+          }
+
+        100%{
+            transform: translatex(500px);
+            background-color: blue;                
+           }
+        
+     }
+/*
+HERE TWO BOXES START AT SAME SPEED BUT SLOW IN HE MIDDLE TIME
+AND IN THE ENDING THEY ENDING THEY REACH THE END POINT AT SAME SPEED
+*/
+    
+</style>
+
+    </head>
+    <body>
+
+        
+<div class="box"> </div>
+
+<div class="box box2"> </div>
+
+
+
+
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,41 @@
+.items-container
+
+ {
+    display: flex;
+    flex-wrap: wrap;/*If we use nowrap we get all boxes in one row*/
+    gap: 1.5rem;
+    background-color: #c9cbcf82;
+    padding: 0 2rem 2rem 2rem;
+}
+
+
+.item-card 
+{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 300px;
+    gap: 1rem;
+    font-size: .7rem;
+    background-color: white;
+    padding: 1rem;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/*SIZINF IMAGE,ITS BORDER */
+.item-card img 
+{
+    height: 300px;
+    width: 100%;
+    border: 2px solid black;
+    object-fit: cover;
+}
+
+/*STYLIMG FOR ANCHOR TAG*/
+.item-card a 
+{
+    text-decoration: none;  /* we remove uneder;line by using none*/  
+    font-weight: bold;
+    color: #007185;
+}
